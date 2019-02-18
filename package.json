@@ -5,5 +5,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": ""
+    "author": "",
+    "devDependencies": {
+        "tslint": "^5.12.1",
+        "typescript": "^3.3.3"
+    }
 }
