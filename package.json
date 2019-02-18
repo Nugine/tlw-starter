@@ -3,11 +3,21 @@
     "version": "0.0.1",
     "description": "",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "webpack-dev-server --mode development --open",
+        "start:es5": "webpack-dev-server --mode development --es5",
+        "start:build": "http-server dist/ -o",
+        "build": "tsc && webpack --mode production",
+        "build:dev": "tsc && webpack --mode development",
+        "build:stats": "tsc && webpack --mode production --profile --json > bundle-stats.json"
     },
     "author": "",
     "devDependencies": {
+        "@open-wc/building-webpack": "^0.1.9",
+        "http-server": "^0.11.1",
         "tslint": "^5.12.1",
-        "typescript": "^3.3.3"
+        "typescript": "^3.3.3",
+        "webpack": "^4.29.5",
+        "webpack-cli": "^3.2.3",
+        "webpack-dev-server": "^3.1.14"
     }
 }
